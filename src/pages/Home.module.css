@@ -1,0 +1,123 @@
+:root
+{
+  --clr: #fff;
+}
+.card
+{
+  position: relative;
+  width: 320px;
+  height: 430px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--clr);
+}
+
+.card .box
+{
+  position: relative;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #60a5fa;
+  border-radius: 15px;
+  /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */
+}
+.card .box:hover {
+  cursor: pointer;
+  background-color: #2563eb;
+}
+  
+.card .box:nth-child(1)::before
+{
+  content: '';
+  position: absolute;
+  top:106px;
+  left: -1px;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  z-index: 10;
+  border-bottom-left-radius: 20px;
+  box-shadow: -6px 6px var(--clr);
+}
+
+
+.card .box:nth-child(1)::after
+{
+  content: '';
+  position: absolute;
+  bottom:-1px;
+  left: 105px;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  z-index: 10;
+  border-bottom-left-radius: 20px;
+  box-shadow: -6px 6px var(--clr);
+}
+
+.card .box:nth-child(1) 
+{
+  box-shadow: 2px -2px 4px rgba(0, 0, 0, 0.5);
+}
+.card .box:nth-child(2)
+{ 
+  height: 220px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.card .box:nth-child(2)::before
+{
+  content: '';
+  position: absolute;
+  bottom: 106px;
+  left: -1px; 
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  border-top-left-radius: 20px;
+  z-index: 10; 
+  box-shadow: -6px -6px var(--clr);
+}
+
+.card .box:nth-child(2)::after
+{
+  content: '';
+  position: absolute;
+  top: -1px;
+  left:109px; 
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  border-top-left-radius: 20px;
+  z-index: 10; 
+  box-shadow: -6px -6px var(--clr);
+}
+
+.card .circle
+{
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: -70px;
+  transform: translateY(-50%);
+  width: 180px;
+  height: 180px;
+  background-color: #fff;
+  border-radius: 50%;
+  background-color: #60a5fa;
+  /* box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5); */
+  border: 10px solid var(--clr);
+}
+
+.circle img 
+{
+  width: 100%;
+  height: 100%;
+}
+
